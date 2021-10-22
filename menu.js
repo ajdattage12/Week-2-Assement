@@ -31,7 +31,8 @@
 */
 
 //CODE HERE
-const pizza = (pizzaName, price, category, popularity, rating, tags) =>{
+const pizza = ("pizzaName", num, "caterogry", num2, num3, "tags" ) 
+const pizzaOrder = ("Pepperoni", 5, "Regular Crust", 10, 5, "Classic") =>{
     return 
 }
 
@@ -44,7 +45,7 @@ const pizza = (pizzaName, price, category, popularity, rating, tags) =>{
 */
 
 //CODE HERE
-
+console.log (pizza.popularity())
 
 /*
     Second, log the second tag in your pizza's
@@ -54,7 +55,7 @@ const pizza = (pizzaName, price, category, popularity, rating, tags) =>{
 */
 
 //CODE HERE
-
+pizza.
 
 /*
     Third, destructure the price off of the

@@ -85,7 +85,10 @@ let calcFinalPrice(20,  )
 */
 
 /*
-    TEXT ANSWER HERE
+    The customer object would need the customers name, customers age, items purchased, date purchased.
+    I would want to know this information so that I could track which customers are repeat customers.
+    As well as which age group is mostly likely to eat there.
+    I also want to teack the items purchased most frequently and dates or inventory purposes. 
 
 */
 
@@ -95,3 +98,10 @@ let calcFinalPrice(20,  )
 */
 
 //CODE HERE
+
+const Customer ={
+    customerName: "Ariell",
+    customerAge: "33",
+    itemsPurchased: "salad, main entree, drink",
+    datesPurchased: "October 22, 2021"
+};
