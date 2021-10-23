@@ -54,9 +54,10 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+
 const canWeDeliver = (arr) =>{
     let num = []
-    if(arr.include = [num])
+    if(arr.includes = [num])
     return ("You're in our delivery zone!"); 
      else 
         ("Sorry, we can't deliver to that address") 
@@ -84,10 +85,15 @@ console.log(canWeDeliver([85205]))
 
 // CODE HERE
 
-const canWeDeliverTwo = (arr) => {
-    return arr.filter([])
-    } 
-      
+const canWeDeliverTwo = (zipCode) => {
+    for(let i = o; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === zipCode){
+            return "You're in our delivery zone!"
+        }
+    }
+    return "Sorry, we can't deliver to this address."
+}
+
 console.log(canWeDeliverTwo([84606]))
 console.log(canWeDeliverTwo([85205]))
 
@@ -125,9 +131,9 @@ const deals = [
 */
 
 //CODE HERE
+deals[0].title = deals[0].title.replace("15", "10");
 
-const newDiscount = deals.title.push ("10% Off!");
-console.log(newDiscount)
+
 
 /*
     The restaurant is going to continue its

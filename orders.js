@@ -36,10 +36,13 @@ class Ticket {
     this.items = items;
     this.orderTime = orderTime;
     this.customerId = customerId;
-    }
-    status(){
-        this.queued = true
-    }
+    this.status = "queued";
+    };
+
+    updateStatus(newStatus) {
+        this.status = newStatus;
+        console.log(`The order for customer ${this.customerId} is now ${this.status}.`);  
+    };
 }
 
 
@@ -55,7 +58,8 @@ class Ticket {
 */
 
 //CODE HERE
-
+const firstTicket = new Ticket ("Pizza, bread, and soda", "7:03", "575");
+console.log(firstTicket);
 
 /*
     Call the `updateStatus` method on
@@ -64,3 +68,4 @@ class Ticket {
 */
 
 //CODE HERE
+firstTicket.updateStatus("cooking")

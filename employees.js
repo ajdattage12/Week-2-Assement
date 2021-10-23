@@ -43,7 +43,7 @@ class Employee {
 */
 
 //CODE HERE
-let empOne = new Employee ("Jess", "weekday mornings and afternoons");
+const empOne = new Employee ("Jess", "weekday mornings and afternoons");
 
 /*
     Call the `getSchedule` method on the
@@ -67,12 +67,8 @@ empOne.getSchedule();
 
 //CODE HERE
 
-let empTwo = { ...empOne };
-let empTwoName = new Employee ("Nick", "weekday mornings and afternoons");
-
-
-
-console.log(empTwoName);
+const empTwo = {... empOne, name: "Nick"};
+console.log(empTwo);
 
 
 //////////////////PROBLEM 2////////////////////
@@ -106,9 +102,9 @@ class Manager extends Employee {
         this.employees = employees
     }
     getEmployees(){
-        console.logs(`${manager} manages ${employee}.`)}
+        console.log(`${this.name} manages ${this.employees.join(', ')}.`)}
     addEmployee(emp){
-        Employee.push(emp)
+        this.employees.push(emp);
     }
 } 
 
@@ -126,7 +122,7 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-let manager = new Manager ("Winston", "weekday mornings and afternoons", "Cece and Schmidt");
+let manager = new Manager ("Winston", "weekday mornings and afternoons", ["Cece", "Schmidt"]);
 
 /*
     Call the `getEmployees` method on the
@@ -152,4 +148,4 @@ manager.addEmployee("Coach");
 */
 
 //CODE HERE
-console.log(manager.addEmployee());
+(manager.getEmployees());
