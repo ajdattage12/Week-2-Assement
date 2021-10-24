@@ -39,7 +39,7 @@ const pizza = {
     rating: 5,
     tags: ["Vegetarian", "GMO FREE"]
 
-},
+};
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -50,7 +50,7 @@ const pizza = {
 */
 
 //CODE HERE
-console.log(pizza.popularity());
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -72,7 +72,8 @@ console.log(pizza.tags[1]);
 
 //CODE HERE
 
-
+const {price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -82,7 +83,8 @@ console.log(pizza.tags[1]);
 */
 
 //CODE HERE
-
+const {catergory} = pizza
+console.log(catergory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -242,5 +244,5 @@ const filterByProperty = (property, number, type) =>{
 
 //CODE HERE
 
-console.log(filterByProperty(5, 2, 2));
-console.log(filterByProperty(cheese, 2 , 2));
+console.log(filterByProperty(3, 8, "above"));
+console.log(filterByProperty("rating", 7, "below"));
